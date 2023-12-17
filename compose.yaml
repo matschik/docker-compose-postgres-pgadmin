@@ -3,6 +3,7 @@ version: '3.8'
 services:
   postgres:
     image: postgres
+    hostname: postgreshost
     env_file:
       - .env
     environment:
@@ -21,7 +22,7 @@ services:
     environment:
       - PGADMIN_DEFAULT_EMAIL=${PGADMIN_DEFAULT_EMAIL}
       - PGADMIN_DEFAULT_PASSWORD=${PGADMIN_DEFAULT_PASSWORD}
-      - POSTGRES_HOST=postgres
+      - POSTGRES_HOST=postgreshost
       - POSTGRES_USER=${POSTGRES_USER}
       - POSTGRES_PASSWORD=${POSTGRES_PASSWORD}
       - POSTGRES_DB=${POSTGRES_DB}

@@ -5,7 +5,7 @@ PGPASSFILE="$HOME/.pgpass"
 
 # Create the .pgpass file for password
 echo "Creating pgpass file at $PGPASSFILE"
-echo "${POSTGRES_HOST}:${POSTGRES_PORT}:*:${POSTGRES_USER}:${POSTGRES_PASSWORD}" > "$PGPASSFILE"
+echo "${POSTGRES_HOST}:*:*:${POSTGRES_USER}:${POSTGRES_PASSWORD}" > "$PGPASSFILE"
 chmod 600 $PGPASSFILE
 cat $PGPASSFILE
 echo "pgpass file created successfully."
@@ -22,7 +22,7 @@ cat << EOF > $SERVERS_JSON_PATH
             "MaintenanceDB": "${POSTGRES_DB}",
             "Username": "${POSTGRES_USER}",
             "PassFile": "$PGPASSFILE",
-            "SSLMode": "disable"
+            "SSLMode": "prefer"
         }
     }
 }
