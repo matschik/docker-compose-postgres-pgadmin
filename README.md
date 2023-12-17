@@ -61,4 +61,4 @@ Contributions to the repository are welcome. Please fork the repository and subm
 
 ## License 📜
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License.
