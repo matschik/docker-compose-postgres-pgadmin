@@ -4,10 +4,10 @@
 
 ## Features 🌟
 
-- **Easy Setup**: One-command launch for both PostgreSQL and pgAdmin.
-- **Pre-configured pgAdmin**: Quick access to pgAdmin with pre-set environment variables and automatic server configuration via `entrypoint.sh`.
-- **No pgadmin login page**: When accessing pgAdmin, you are automatically logged in with the credentials you set in the `.env` file.
-- **Customizable**: Easy to customize with your environment variables via the `.env` file.
+- **🚀 Easy Setup**: One-command launch for both PostgreSQL and pgAdmin.
+- **🖥️ Pre-configured pgAdmin**: Quick access to pgAdmin with pre-set environment variables and automatic server configuration via `entrypoint.sh`.
+- **🔑 No pgAdmin Login Page**: When accessing pgAdmin, you are automatically logged in with the credentials you set in the `.env` file.
+- **⚙️ Customizable**: Easy to customize with your environment variables via the `.env` file.
 
 ## Prerequisites 🛠️
 
@@ -53,7 +53,7 @@
 
 ## ⚠️ Production Use Caution ⚠️
 
-- The pgAdmin setup provided in this repository, particularly with the use of the `entrypoint.sh` script, is intended for development or testing purposes and is not recommended for production environments. For production deployments, consider more secure and robust configuration practices.
+The pgAdmin setup provided in this repository, particularly with the use of the `entrypoint.sh` script, is intended for development or testing purposes and is not recommended for production environments. For production deployments, consider more secure and robust configuration practices.
 
 ## Contributing 🤝
 
