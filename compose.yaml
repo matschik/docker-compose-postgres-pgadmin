@@ -3,7 +3,6 @@ version: '3.8'
 services:
   postgres:
     image: postgres
-    container_name: postgres
     env_file:
       - .env
     environment:
@@ -17,7 +16,6 @@ services:
 
   pgadmin:
     image: dpage/pgadmin4
-    container_name: pgadmin
     env_file:
       - .env
     environment:
@@ -33,7 +31,7 @@ services:
       - ${PGADMIN_PORT}:80
     depends_on:
       - postgres
-    user: "root"
+    user: root
     volumes:
       - ./entrypoint.sh:/entrypoint_custom.sh
     entrypoint: /entrypoint_custom.sh

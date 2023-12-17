@@ -38,7 +38,7 @@
    Run the following command to start the services defined in `compose.yaml`:
 
    ```sh
-   docker-compose -f compose.yaml up -d
+   docker-compose up -d
    ```
 
 4. **Access pgAdmin**
