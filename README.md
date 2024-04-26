@@ -19,7 +19,7 @@
 1. **Clone the Repository**
 
    ```sh
-   git clone https://github.com/your-username/docker-compose-postgres-pgadmin.git
+   git clone https://github.com/matschik/docker-compose-postgres-pgadmin.git
    cd docker-compose-postgres-pgadmin
    ```
 
