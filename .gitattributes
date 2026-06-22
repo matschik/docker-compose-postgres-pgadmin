@@ -1,0 +1,9 @@
+# Force LF line endings for shell scripts so they run inside Linux containers
+# even when cloned on Windows (fixes "no such file or directory" on entrypoint).
+*.sh text eol=lf
+entrypoint.sh text eol=lf
+
+# Keep other text files normalized to LF as well
+*.yaml text eol=lf
+*.yml text eol=lf
+.env.example text eol=lf

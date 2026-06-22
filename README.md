@@ -51,6 +51,17 @@
 - `.env.example`: An example environment file. Rename this to `.env` and fill in your desired values before starting your containers.
 - `entrypoint.sh`: A custom entrypoint script for pgAdmin to set up server connections automatically.
 
+## Windows users 🪟
+
+`entrypoint.sh` must keep Unix (LF) line endings to run inside the Linux container.
+This repository ships a [`.gitattributes`](.gitattributes) file that enforces LF on
+clone, so you normally don't need to do anything. If you ever hit
+`exec /entrypoint_custom.sh: no such file or directory`, re-normalize the file:
+
+```sh
+git add --renormalize .
+```
+
 ## ⚠️ Production Use Caution ⚠️
 
 The pgAdmin setup provided in this repository, particularly with the use of the `entrypoint.sh` script, is intended for development or testing purposes and is not recommended for production environments. For production deployments, consider more secure and robust configuration practices.

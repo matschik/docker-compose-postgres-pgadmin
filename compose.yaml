@@ -1,6 +1,6 @@
 services:
   postgres:
-    image: postgres
+    image: postgres:latest
     hostname: postgreshost
     env_file:
       - .env
@@ -19,7 +19,7 @@ services:
       retries: 3
 
   pgadmin:
-    image: dpage/pgadmin4
+    image: dpage/pgadmin4:latest
     env_file:
       - .env
     environment:
